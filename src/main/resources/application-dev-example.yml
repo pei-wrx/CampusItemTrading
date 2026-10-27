@@ -1,0 +1,13 @@
+campus:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    host: localhost
+    port: 3306
+    database: campus_item_trading
+    username: root
+    password: passwd #
+  redis:
+    host: localhost
+    port: 6379
+    password: passwd #
+    database: 5

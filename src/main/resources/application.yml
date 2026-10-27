@@ -1,0 +1,19 @@
+server:
+  port: 8001
+spring:
+  profiles:
+    active: dev
+  ai:
+    deepseek:
+      api-key: ${DEEPSEEK_API_KEY}
+  datasource:
+    driver-class-name: ${campus.datasource.driver-class-name}
+    url: jdbc:mysql://${campus.datasource.host}:${campus.datasource.port}/${campus.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${campus.datasource.username}
+    password: ${campus.datasource.password}
+  data:
+    redis:
+      host: ${campus.redis.host}
+      port: ${campus.redis.port}
+      password: ${campus.redis.password}
+      database: ${campus.redis.database}
